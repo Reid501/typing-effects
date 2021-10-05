@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FF580A;
+    padding-left:7.291vw;
+    height: 100vh;
+    position: relative;
+}
+
+.sample-text {
+    margin-top:  7.479vw;
+}
+
+h1 {
+    color: #FF580A;
+    padding-left: 7.291vw;
+}
+
+header {
+    padding: 3vw 0;
+}
+
+p,
+span,
+a {
+    color: white;
+    font-size: 79px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    display: inline;
+}
+
+.section-two {
+    padding-top: 100px;
+    padding-right: 32.427vw;
+}
+
+/* sentence two cursor */
+
+.txt-type > .txt {
+    border-right: 0.1rem solid white;
+}
+
+
+.typed-cursor {
+    font-size: 79px;
+    color: white;
+}
+
+
+/* Animation */
+
+
+
+.sample-text {
+    padding-right: 32.427vw;
+    display: inline;
+}
+
+/* Highlight */
+
+
+.animation-text {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    background: linear-gradient(to right, white, white 50%, #FF580A 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 0 100%;
+    transition: background-position 675ms ease;
+    text-decoration: line-through;
+  } 
+
+.animation-background {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    background: linear-gradient(to right, #FF580A , #FF580A  50%, white 50%);
+    background-size: 200% 100%;
+    background-position: 0 100%;
+    transition: background-position 675ms ease;
+  }
+
+
+  .animation-container {
+      display: inline;
+      position: relative;
+  }
+
+
+  .line-through-highlight {
+    color: #FF580A;
+    background-color: white;
+    text-decoration: line-through;
+  }
+
+  .line-through {
+    background-color: #FF580A;
+    color: white;
+    text-decoration: line-through;
+  }
+
+  @media screen and (max-width: 800px) {
+    p,
+    span,
+    a {
+        font-size: 49px;        
+    }
+
+    .typed-cursor {
+        font-size: 49px;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    p,
+    span,
+    a {
+        font-size: 50px;        
+    }
+
+    .typed-cursor {
+        font-size: 50px;
+    }
+  }
