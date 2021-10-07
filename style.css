@@ -49,6 +49,10 @@ p {
     display: inline;
 }
 
+.p-spacing {
+    margin-right: 8px;
+}
+
 .section-two {
     padding-top: 100px;
     padding-right: 32.427vw;
@@ -89,7 +93,7 @@ p {
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 0 100%;
-    transition: background-position 675ms ease;
+    transition: background-position 875ms ease-in;
     text-decoration: line-through;
   } 
 
@@ -100,7 +104,7 @@ p {
     background: linear-gradient(to right, #FF580A , #FF580A  50%, white 50%);
     background-size: 200% 100%;
     background-position: 0 100%;
-    transition: background-position 675ms ease;
+    transition: background-position 875ms ease-in;
   }
 
 
@@ -145,3 +149,28 @@ p {
         font-size: 50px;
     }
   }
+
+  /* Blinker */
+
+  .my-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    display: none;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

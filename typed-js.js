@@ -1,24 +1,9 @@
 import Typed from './typed.js-master/src/typed.js';
 
-const runTyping = () => {
-
-
-    var typed = new Typed('#typed', {
-        strings: [ 'remove the jargon and'],
-        typeSpeed: 40,
-        backSpeed: 40,
-        loop: false
-      });
-        
-}
-
-runTyping();
 setTimeout(function(){ 
   const background = document.querySelector('.animation-background');
   const text = document.querySelector('.animation-text');
-  const cursor = document.querySelector('.typed-cursor');
 
-  cursor.remove();
   background.style.backgroundPosition = '100%';
   text.style.backgroundPosition = '100%';
 
@@ -30,30 +15,66 @@ setTimeout(function(){
 
     setTimeout(function(){ 
 
-      text.classList.remove('line-through-highlight')
-  
-      text.classList.add('line-through')
-    }, 1300);
+      const container = document.querySelector('.animation-container');
+      container.remove();
 
-  }, 1300);
+    }, 2000);
 
-}, 2300);
+  }, 2000);
 
+}, 2000);
 
 
 
 const runTypingTwo = () => {
+  
   setTimeout(function(){ 
+
+
     var typed = new Typed('#typedTwo', {
-        strings: [ 'This is a test', 'This is a example', 'This is a example to show how we can create a typing effect.'],
+      
+        strings: [ 'This is a test', 'This is a example '],
+        showCursor: false,
         typeSpeed: 50,
-        backSpeed: 30,
-        loop: true,
+        backSpeed: 60,
+
         smartBackspace: true
-      });
-    }, 6000);
-  }
+    });
+    const cursor = document.querySelector('.my-cursor');
+    cursor.style.display = "inline"
+  }, 6500);
+}
+
+const runTypingThree = () => {
+
+  setTimeout(function(){ 
+    var typed = new Typed('#typedThree', {
+        strings: [ 'to show how we can'],
+        showCursor: false,
+        typeSpeed: 70,
+    });
+
+    const spacing = document.querySelector('.spacing');
+    spacing.classList.add('p-spacing')
+  }, 10000);
+}
+
+const runTypingFour = () => {
+
+  setTimeout(function(){ 
+    var typed = new Typed('#typedFour', {
+        strings: [ 'create a typing effect.'],
+        showCursor: false,
+        typeSpeed: 50,
+    });
+
+    const spacingTwo = document.querySelector('.spacing-two');
+    spacingTwo.classList.add('p-spacing')
+  }, 12300);
+}
 
 
 
 runTypingTwo();
+runTypingThree();
+runTypingFour();
